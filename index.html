@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- css style sheets - incl bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - To do app</title>
+</head>
+<body>
+
+    <div class="container" id="mainJumbo">
+        <div class="jumbotron text-center">
+            <h1>Task Planner </h1>
+        </div>
+    </div>
+    
+
+    <div class="container" id="mainSection">
+      <div class="row">
+        
+        <div class="col-md-6" id="form">
+          <div> 
+            <button type="button" id= "showFormButton" class="btn"> 
+              Click to Add Task
+            </button>
+          </div>
+          <form id="inputForm" class="hide">
+              <div class="form-group">
+                <label for="enterName">Name</label>
+                <input type="text" class="form-control" id="enterName" placeholder="Enter name of person who has set task:">
+              </div>
+              <div class="form-group">
+                <label for="assignTo">Assigned To</label>
+                <input type="text" class="form-control" id="assignTo" placeholder="Who is completing this task?">
+              </div>
+              <div class="form-group">
+                  <label for="describeTask">Description</label>
+                  <input type="text" class="form-control" id="describeTask" placeholder="Describe this task:">
+                </div>
+              <div class="form-group">
+                  <label for="enterDate">Date</label>
+                  <input type="date" class="form-control" id="enterDate" placeholder="When is this task due?">
+              </div>
+              <div class="form-group">
+                  <label for="statusInput">Example select</label>
+                  <select class="form-control" id="statusInput">
+                  <option selected>Choose...</option>
+                    <option value="todo">To-do</option>
+                    <option value="review">Review</option>
+                    <option value="inprogress">In progress</option>
+                    <option value="done">Done</option>
+                  </select>
+                </div>
+
+
+              <button type="button" class="btn btn-primary" id="buttonAdd">Add task</button>
+            </form>
+      </div>
+
+   
+
+           
+<!--where my list goes -->
+            <div class="col-md-6" id="listTasks" >
+                <!-- <div class="list-group" >
+                  <a class="list-group-item list-group-item-action flex-column align-items-start" taskID="${taskObj.ID}"></a>
+                    <!-- this is where tasks will pop-->
+                  </div> 
+            </div>
+        
+          </div>
+
+<!-- this row, where each card will have its own column (col-md-4)-->
+        <div class="row" id="cardsArea">
+          
+        </div>
+           <!-- inner HTML for the row above, goes here-->
+
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--bootstrap js files-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="myapp.js"></script>
+</body>
+</html>
